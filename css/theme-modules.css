@@ -2558,6 +2558,7 @@ body.has-no-comments .comment-respond {
 .pre-wrapper pre{
   padding-top: 25px;
 }
+
 .pre-wrapper .copy-snippet {
   opacity: 1;
   border-radius: 5px;
@@ -2579,19 +2580,12 @@ body.has-no-comments .comment-respond {
   top:0;
   right:0;
 }
-.pre-wrapper .copy-snippet:disabled{
-  color:#ffffff;
-}
 
 pre {
   font-size: 17px;
   font-weight: 400;
   padding: 14px 14px 14px 14px;
   background: #f4f7fc !important;
-}
-
-pre:hover > .copy-snippet {
-  opacity:1;
 }
 
 .read_more {
