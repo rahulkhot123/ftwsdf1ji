@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4651107-6795-41e8-9f4e-1beda6018e11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/theme-modules.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/theme-modules.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap_1.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,19 +47,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sitemap_1.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/theme-modules.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="113">
               <caret line="2564" column="17" lean-forward="true" selection-start-line="2564" selection-start-column="17" selection-end-line="2564" selection-end-column="17" />
             </state>
           </provider>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/contact-us.html" />
         <option value="$PROJECT_DIR$/privacy-policy.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/sitemap_1.xml" />
         <option value="$PROJECT_DIR$/css/theme-modules.css" />
+        <option value="$PROJECT_DIR$/sitemap_1.xml" />
       </list>
     </option>
   </component>
@@ -228,18 +228,18 @@
       <workItem from="1581064000339" duration="94000" />
       <workItem from="1581151325745" duration="9386000" />
       <workItem from="1581234167280" duration="1537000" />
-      <workItem from="1581257062875" duration="4085000" />
+      <workItem from="1581257062875" duration="4565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16960000" />
+    <option name="totallyTimeSpent" value="17440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1370" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22575757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22575757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -343,17 +343,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sitemap_1.xml">
+    <entry file="file://$PROJECT_DIR$/css/theme-modules.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="113">
+          <caret line="2564" column="17" lean-forward="true" selection-start-line="2564" selection-start-column="17" selection-end-line="2564" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme-modules.css">
+    <entry file="file://$PROJECT_DIR$/sitemap_1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="2564" column="17" lean-forward="true" selection-start-line="2564" selection-start-column="17" selection-end-line="2564" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
