@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Site Title-->
+    <title>SCP Command</title>
+    <meta name="description" content="scp Command stands for Secure Copy Command. To copy files between two systems in the secure way the scp command used. For security, this command encrypts files and passwords sent to another remote or local system."/>
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <!-- Fonts for icons-->
+    <link href="css/all-fontawesome.min.css" rel="stylesheet">
+    <!-- bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Plugins CSS-->
+    <link href="css/plugins/spacing-and-height.css" rel="stylesheet">
+    <!-- Style CSS-->
+    <link href="css/theme-modules.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+        <img class="etcodes-normal-logo" src="images/logo.png" style="height: 50px;" alt="Logo">
+        <img class="etcodes-mobile-logo" src="images/logo.png" style="height: 50px;" alt="Logo"></a>
+        <button class="navbar-toggler hamburger-menu-btn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span>toggle menu</span></button>
+        <div class="navbar-modules d-none d-lg-flex ml-20px">
+            <div class="navbar-module"><a target="_blank" href="https://twitter.com/CommandScp"><i class="fab fa-twitter"></i></a></div>
+            <div class="navbar-module"><a target="_blank" href="https://www.facebook.com/SCPCommand/"><i class="fab fa-facebook-f"></i></a></div>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar-->
+<!-- Page Title-->
+<div class="page-main-title mb-60px">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 text-center text-lg-left">
+                <div class="breadcrumbs mt-10px mt-lg-0 text-center text-lg-left">
+                    <span><a href="#">Home</a></span>
+                    <span><a href="#">SCP Command</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Title-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Blog-->
+            <div class="row blog-post cardPostStyle">
+                <div class="col-md-12 col-lg-12">
+                    <article>
+                        <h1 class="entry-title mb-3"><a href="https://www.scpcommand.info">SCP Command in Linux With Examples</a></h1>
+                        <div class="entry-meta-top mb-3"><span class="entry-meta-category"><a href="blog-three-col.html">By Admin, </a></span><span class="post-meta-date">JAN 03, 2020</span></div>
+
+                        <div class="entry-media"><img src="images/scp-command-in-linux.jpg" alt="Entry Image"/></div>
+                        <div class="entry-content-wrapper">
+
+                            <div class="entry-content">
+                                <h2>SCP Commands in Linux</h2>
+                                <p><code>scp</code> Command stands for Secure Copy Command. To copy files between
+                                    two systems in the secure way the <code>scp</code> command used. For security, this
+                                    command encrypts files and passwords sent to another remote or local
+                                    system. The <code>scp</code> command mainly used to transfer files from one remote
+                                    system to another local system or from one remote system to another
+                                    remote system. In this tutorial, you are going to learn <code>scp</code> command
+                                    in Linux to securely transfer files.</p>
+
+                                <h3 id="scp_command_basic_syntax">Basic Syntax</h3>
+                                <p>The basic syntax for <code>scp</code> command given below:</p>
+                                <pre>scp [OPTION] [username@]source_host:filename_1 [username@]dest_host:filename_2</pre>
+                                In the above syntax:
+                                <p><strong>filename_1</strong>: Source filename on the remote or local server</p>
+                                <p><strong>filename_2</strong>: Destination filename or directory path on the remote or local server</p>
+                                <p><strong>[OPTION]</strong>: Options for <code>scp</code> command are looks like below:</p>
+                                <ul>
+                                    <li><code>-r</code>: This option will copy directory recursively.</li>
+                                    <li><code>-p</code>: It will preserve the file access and modification time data. </li>
+                                    <li><code>-C</code>: Force <code>scp</code> to compress data before sending it.</li>
+                                    <li><code>-P</code>: Use custom remote host ssh port.</li>
+                                    <li><code>-v</code>: Verbose mode.</li>
+                                    <li><code>-c</code>: Specify cipher for data encryption.</li>
+                                </ul>
+                                <h3 id="scp_command_quick_examples">Quick Examples</h3>
+                                <p>1. Copy or transfer file from the remote system to local system: <a class="read_more" href="#copy_file_from_remote_to_local_system_using_scp_command">Read More</a></p>
+                                <pre>scp remote_username@202.20.x.x:/tmp/demo.txt ~/Documents</pre>
+
+                                <p>2. Copy or transfer file from local system to the remote system: <a class="read_more" href="#copy_file_from_local_system_to_remote_system_using_scp_command">Read More</a></p>
+                                <pre>scp /Desktop/demo.txt remote_username@202.20.x.x:/tmp </pre>
+
+                                <p>3. Copy or transfer file from remote system to the remote system: <a class="read_more" href="#copy_file_from_remote_system_to_another_remote_system_using_scp_command">Read More</a></p>
+                                <pre>scp remote_username_1@202.20.x.x:/tmp/demo.txt remote_username_2@example.edu:/opt</pre>
+
+                                <p>4. Copy or transfer directory from local system to the remote system: <a class="read_more" href="#copy_directory_from_remote_to_local_system_using_scp_command">Read More</a></p>
+                                <pre>scp -r remote_username@202.20.x.x:/tmp/test1 ~/Documents</pre>
+
+                                <p>5. Copy or transfer files from local system to the remote system: <a class="read_more" href="#copy_files_from_local_system_to_remote_system_using_scp_command">Read More</a></p>
+                                <pre>scp demo1.txt demo2.txt remote_username@202.20.x.x:/tmp </pre>
+
+                                <p>6. Copy or transfer files from the remote system to local system: <a class="read_more" href="#copy_files_from_remote_system_to_local_system_using_scp_command">Read More</a></p>
+                                <pre>scp remote_username@202.20.x.x:/tmp/\{demo1.txt,demo2.txt\} ~/Documents</pre>
+
+                                <h3 id="scp_command_examples">SCP Command Examples</h3>
+                                <p>Following are the SCP
+                                    command examples:</p>
+                                <h4 id="copy_file_from_remote_to_local_system_using_scp_command">1. Copy file from remote system to local system using SCP command.</h4>
+                                Let's assume you want to copy or transfer the file demo.txt from a remote host system to local host system then you should run following
+                                command in the terminal:
+                                <pre>scp remote_username@202.20.x.x:/tmp/demo.txt ~/Documents</pre>
+
+                                <p>In the above example, the file named <code>demo.txt</code> will be copied
+                                    from remote system to local system inside <code>Documents</code> directory.</p>
+
+                                <h4 id="copy_file_from_local_system_to_remote_system_using_scp_command">2. Copy file from a local system to remote system using SCP command.</h4>
+                                Now if you want to copy or transfer the file demo.txt from a local system to remote system then type following
+                                command in the terminal and hit <code>Enter</code> key:
+                                <pre>scp /Desktop/demo.txt remote_username@202.20.x.x:/tmp </pre>
+
+                                <p>In the above example, the file named <code>demo.txt</code> will be copied
+                                    from local system to remote system inside <code>/tmp</code> directory.
+                                </p>
+
+
+                                <h4 id="copy_file_from_remote_system_to_another_remote_system_using_scp_command">3. Copy file from remote system to another remote system using SCP command.</h4>
+                                Let's assume if you want to copy or transfer the file demo2.txt from a remote host
+                                system to another remote host system then you should run following
+                                command in the terminal:
+                                <pre>scp remote_username_1@202.20.x.x:/tmp/demo.txt remote_username_2@example.edu:/opt</pre>
+
+                                <p>In the above example, the file named <code>demo.txt</code> inside <code>/tmp</code> directory will be copied
+                                    from one remote system to another remote system inside <code>/opt</code> directory.</p>
+
+                                <h4 id="copy_directory_from_remote_to_local_system_using_scp_command">4. Copy directory from remote system to local system using SCP command.</h4>
+                                Here we want to copy the whole directory named <code>test1</code> from a remote host
+                                system to local host system then you should run following
+                                command in the terminal:
+                                <pre>scp -r remote_username@202.20.x.x:/tmp/test1 ~/Documents</pre>
+
+                                <p>In the above example, the directory named <code>test1</code> inside <code>/tmp</code> directory will be copied
+                                    from one remote system to local system inside <code>Documents</code> directory as like below:</p>
+
+                                <h4 id="copy_files_from_local_system_to_remote_system_using_scp_command">5. Copy files from a local system to remote system using SCP command.</h4>
+                                Now here we want to transfer the file demo1.txt and demo2.txt from a local system to remote system then we should type following
+                                command in the terminal and hit <code>Enter</code> key:
+                                <pre>scp demo1.txt demo2.txt remote_username@202.20.x.x:/tmp </pre>
+
+                                <p>In the above example, the file named <code>demo1.txt</code> and <code>demo2.txt</code> will be copied
+                                    from local system to remote system inside <code>/tmp</code> directory
+                                   .</p>
+
+                                <h4 id="copy_files_from_remote_system_to_local_system_using_scp_command">6. Copy files from remote system to local system using SCP command.</h4>
+                                Let's assume you want to copy or transfer the file <code>demo1.txt</code> and <code>demo2.txt</code> from
+                                a remote host system to local host system then you should run following
+                                command in the terminal:
+                                <pre>scp remote_username@202.20.x.x:/tmp/\{demo1.txt,demo2.txt\} ~/Documents</pre>
+
+                                <p>In the above example, the file named <code>demo1.txt</code> and <code>demo2.txt</code> will be copied
+                                    from remote system to local system inside <code>Documents</code> directory.</p>
+
+                                <h3 id="scp_command_performance_improvement">Performance Improvement</h3>
+                                <p>We can also improve the performance of <code>scp</code> command in Linux by using different cipher for encryption.
+                                    In <code>scp</code> command <code>Triple-DES</code> cipher is used for encryption of data to be sent.</p>
+
+                                <p>Here to improve the performance we can use <code>blowfish</code> cipher to encrypt the data.</p>
+
+                                <pre>scp -c blowfish /Desktop/demo.txt remote_username@202.20.x.x:/tmp </pre>
+
+                                <h3>Conclusion</h3>
+                                <p>Here in this tutorial, we have successfully covered <code>scp</code> command in Linux. If you have any suggestions for queries then please comment below.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- End Blog-->
+        </div>
+        <div class="col-lg-4">
+            <!-- Sidebar-->
+
+            <div class="bg-color-grayflame widget pt-30px pb-30px px-30px">
+                <h5 class="widget-title">In this tutorial</h5>
+                <ul class="border-list">
+                    <li><a href="#scp_command_basic_syntax">1. Basic Syntax</a></li>
+                    <li><a href="#scp_command_quick_examples">2. Quick Examples</a></li>
+                    <li><a href="#scp_command_examples">3. All Examples</a></li>
+                    <li><a href="#scp_command_performance_improvement">4. Performance Improvement</a></li>
+                </ul>
+            </div>
+            <!--<div class="widget bg-color-grayflame pt-30px pb-30px px-30px">
+                <h5 class="widget-title mb-25px">Top Posts</h5>
+                <ul class="simple-entry-list blog-post">
+                    <li>
+                        <div class="reveal-title">1</div>
+                        <div class="entry-content-wrapper"><a class="entry-title" href="blog-single-post.html">How to improve performance of SCP Command.</a>
+                            <div class="entry-meta-top"><span class="post_meta_date">Feb 06, 2020</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- Sidebar End-->
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="web-footer footer">
+    <div class="web-footer footer py-45px">
+        <div class="container">
+            <div class="row large-gutters">
+                <div class="col-md-6">
+                    <div class="footer-widget">
+                        <p class="m-md-0">© 2020 SCPCommand.Info</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-widget">
+                        <ul class="list-inline m-0 text-md-right footer-nav">
+                            <li class="list-inline-item mb-0"><a href="https://www.scpcommand.info/privacy_policy">Privacy Policy</a></li>
+                            <li class="list-inline-item mb-0"><a href="https://www.scpcommand.info/contact_us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer-->
+<!-- javascript files-->
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script>
+    jQuery( document).ready(function($){
+        var copyid = 0;
+        $('pre').each(function(){
+            copyid++;
+            $(this).attr( 'data-copyid', copyid).wrap( '<div class="pre-wrapper"/>');
+            $(this).parent().css( 'margin', $(this).css( 'margin') );
+            $('<button class="copy-snippet">Copy</button>').insertAfter( $(this) ).data( 'copytarget',copyid );
+        });
+
+        $('body').on( 'click', '.copy-snippet', function(ev){
+            ev.preventDefault();
+
+            var $copyButton = $(this);
+
+            $pre = $(document).find('pre[data-copyid=' + $copyButton.data('copytarget' ) + ']');
+            if ( $pre.length ) {
+                var textArea = document.createElement("textarea");
+
+                // Place in top-left corner of screen regardless of scroll position.
+                textArea.style.position = 'fixed';
+                textArea.style.top = 0;
+                textArea.style.left = 0;
+
+                // Ensure it has a small width and height. Setting to 1px / 1em
+                // doesn't work as this gives a negative w/h on some browsers.
+                textArea.style.width = '1px';
+                textArea.style.height = '1px';
+
+                // We don't need padding, reducing the size if it does flash render.
+                textArea.style.padding = 0;
+
+                // Clean up any borders.
+                textArea.style.border = 'none';
+                textArea.style.outline = 'none';
+                textArea.style.boxShadow = 'none';
+
+                // Avoid flash of white box if rendered for any reason.
+                textArea.style.background = 'transparent';
+                textArea.style.visibility = 'invisible';
+
+                //Set value to text to be copied
+                textArea.value = $pre.html();
+
+                document.body.appendChild(textArea);
+                textArea.select();
+
+                try {
+                    document.execCommand('copy');
+                    $copyButton.text( 'Copied').prop('disabled', true);;
+                } catch (err) {
+                    $copyButton.text( 'FAILED: Could not copy').prop('disabled', true);;
+                }
+                setTimeout(function(){
+                    $copyButton.text( 'Copy').prop('disabled', false);;
+                }, 3000);
+            }
+        });
+    });
+</script>
+</body>
+</html>
